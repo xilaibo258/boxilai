@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>精选作品</title>
+		<style type="text/css">
+			*{
+			    margin:0;
+			    padding:0;
+			    box-sizing:border-box;
+			}
+			body{
+			    font-family:"微软雅黑";
+			    background:#f5f5f5;
+			}
+			/* 页面标题 */
+			h1{
+			    text-align:center;
+			    margin-top:50px;
+			    font-size:42px;
+			}
+			/* 作品展示区 */
+			.box{
+			    width:90%;
+			    margin:50px auto;
+			    display:flex;
+			    justify-content:space-between;
+			    gap:20px;
+			}
+			
+			/* 卡片 */
+			
+			.card{
+			    flex:1;/*平均分父元素的空间*/
+			    height:480px;
+			    background:white;
+			    border-radius:15px;
+			    box-shadow:0 5px 15px rgba(0,0,0,.15);
+			    overflow:hidden;
+			    transition:0.3s;
+			}
+			.card:hover{
+			    transform:translateY(-10px);
+			    box-shadow:0 10px 20px rgba(0,0,0,.25);
+			}
+			
+			/* 图片 */
+			
+			.pic1{
+			    width:100%;
+			    height:400px;
+				background-image: url("img/4I_U-hqwsysy9914734.png");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.pic2{
+			    width:100%;
+			    height:400px;
+				background-image: url("img/462f7aae173149179382ad97f374e385071076ce2eb7cf-SitVIK_fw658webp.webp");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.pic3{
+			    width:100%;
+			    height:400px;
+				background-image: url("img/7703.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			/* 文字 */
+			.text{
+			    text-align:center;
+			    line-height:80px;
+			    font-size:24px;
+			}
+			@media screen and (max-width:768px){
+				.box{
+					flex-direction: column;
+				}
+				h1{font-size:20px;
+				}
+				.card{
+					height:350px;
+				}
+				.pic1,.pic2,.pic3
+				{height:280px;}
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>我的精选作品</h1>
+		<div class="box">
+		    <div class="card">
+		        <div class="pic1"></div>
+				<div class="text">作品1</div>
+			</div>
+		
+			<div class="card">
+		        <div class="pic2"></div>
+		        <div class="text">作品2</div>
+		    </div>
+		
+		    <div class="card">
+		        <div class="pic3"></div>
+		        <div class="text">作品3</div>
+		    </div>
+		
+		</div>
+	</body>
+</html>
